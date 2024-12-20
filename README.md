@@ -1,6 +1,6 @@
 ## myrmyr
 
-**myrmyr** is a network traffic analyzer and visualizer that allows you to monitor and capture network packets in real-time, providing an intuitive dashboard and the ability to save packets for offline analysis.
+**myrmyr** is a CLI based network traffic analyzer and visualizer that allows you to monitor and capture network packets in real-time, providing an intuitive dashboard and the ability to save packets for offline analysis.
 
 ---
 
