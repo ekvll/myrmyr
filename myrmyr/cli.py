@@ -1,8 +1,8 @@
 import argparse
 
 from .dashboard.app import run_dashboard
-from .network_interface.app import scan_for_network_interfaces
 from .output_pcat.app import output_pcap
+from .scan.network_interface import scan_for_network_interfaces
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
     parser1 = subparser.add_parser("dashboard", help="Dashboard command")
     parser1.add_argument("--interface", required=True, help="Interface to sniff")
 
-    subparser.add_parser("interface", help="Interface command")
+    subparser.add_parser("scan", help="Interface command")
 
     parser3 = subparser.add_parser("output", help="Interface command")
     parser3.add_argument("--interface", required=True, help="Interface to sniff")
@@ -26,7 +26,7 @@ def main():
     if args.command == "dashboard":
         run_dashboard(args.interface)
 
-    elif args.command == "interface":
+    elif args.command == "scan":
         scan_for_network_interfaces()
 
     elif args.command == "output":
