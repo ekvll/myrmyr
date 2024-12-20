@@ -4,9 +4,12 @@ from .dashboard.app import run_dashboard
 from .output_pcat.app import output_pcap
 from .scan.network_interface import scan_for_network_interfaces
 
+VERSION = "0.1.0"
+
 
 def main():
     parser = argparse.ArgumentParser(description="MyrMyr CLI")
+    parser.add_argument("--version", action="version", version=f"%(prog)s {VERSION}")
     subparser = parser.add_subparsers(dest="command", required=True)
 
     parser1 = subparser.add_parser("dashboard", help="Dashboard command")
@@ -31,3 +34,6 @@ def main():
 
     elif args.command == "output":
         output_pcap(args.interface, args.count, args.filename)
+
+    else:
+        raise ValueError("Invalid command")
