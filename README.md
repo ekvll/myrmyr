@@ -75,7 +75,7 @@ Output files are stored in the directory ```/data/pcap/```, which is automatical
 
 ### Disclaimer
 
-This project is intended solely for educational purposes to demonstrate and learn about network analysis and traffic inspection techniques. Unauthorized network sniffing or monitoring is strictly prohibited and may violate privacy laws, organizational policies, or terms of service agreements.
+This project is intended solely for educational purposes to demonstrate and learn about network analysis and traffic inspection techniques. Unauthorized network sniffing or monitoring may violate privacy laws, organizational policies, or terms of service agreements.
 
 Users are responsible for ensuring their use of this software complies with applicable laws and regulations. The authors and contributors of this repository do not condone or take responsibility for any misuse or unethical application of this tool. Always obtain proper authorization before analyzing or capturing network traffic.
 
