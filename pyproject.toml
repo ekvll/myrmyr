@@ -1,0 +1,14 @@
+[project]
+name = "myrmyr"
+version = "0.1.0"
+description = "Network sniffer"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+myrmyr = "myrmyr.cli:main"
+
+[build-system]
+requires = ["setuptools>=62.0", "wheel"]
+build-backend = "setuptools.build_meta"
